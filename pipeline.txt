@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+    tools {nodejs "Node"}
+    stages {
+        stage('git checkout') {
+            steps {
+                git url:"https://github.com/SkillsMetrix/marsh-node-pipeline",branch:"main"
+            }
+        }
+        stage('install depen') {
+            steps {
+                bat 'npm install'
+            }
+        }
+        stage('deploy') {
+            steps {
+                bat 'npm start'
+            }
+        }
+    
+    }
+}
+
