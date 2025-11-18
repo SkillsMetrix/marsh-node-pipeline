@@ -3,7 +3,7 @@ var app= express()
 
 app.get('/showuser',(req,res)=>{
 
-    res.send('user details found')
+    res.send('user details found again')
 })
 app.get('/adduser',(req,res)=>{
 
@@ -11,6 +11,6 @@ app.get('/adduser',(req,res)=>{
 })
 
 
-app.listen(3000,()=>{
+app.listen(4000,()=>{
     console.log('server is ready');
 })
