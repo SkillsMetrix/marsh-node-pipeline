@@ -3,7 +3,7 @@ var app= express()
 
 app.get('/showuser',(req,res)=>{
 
-    res.send('user details found again')
+    res.send('user details found by Customer')
 })
 app.get('/adduser',(req,res)=>{
 
